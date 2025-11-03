@@ -1,0 +1,1 @@
+# light-nvim-config
