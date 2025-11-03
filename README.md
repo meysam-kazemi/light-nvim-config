@@ -19,11 +19,11 @@ nvim
 First start → type `:Lazy sync` → restart → DONE!
 
 ## Key Cheatsheet
-
-Key,Action
-Space e,Toggle left file tree
-cmm,Comment line(s)
-Space s,Toggle spell check
-gt / gT,Next / previous buffer
+| Key | Description |
+| :--- | :--- |
+| Space e | Toggle left file tree |
+| cmm | Comment line(s) |
+| Space s | Toggle spell check |
+| gt / gT | Next / previous buffer |
 
 
