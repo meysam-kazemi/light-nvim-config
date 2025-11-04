@@ -1,3 +1,4 @@
+-- ~/.config/nvim/init.lua
 vim.g.mapleader = " "
 
 require("plugins")
@@ -16,6 +17,18 @@ vim.opt.expandtab = true
 vim.opt.termguicolors = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.g.clipboard = {
+  name = "OSC52",
+  copy = {
+    ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+  },
+  paste = {
+    ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+  },
+  cache_enabled = 1,
+}
 
 vim.cmd[[colorscheme tokyonight-moon]]
 -- vim.opt.background = "light"
