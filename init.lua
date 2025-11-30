@@ -65,6 +65,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+vim.keymap.set("n", "<C-q>", ":bdelete | bnext<CR>", { desc = "Close & next buffer", silent = true })
+
 vim.cmd[[colorscheme tokyonight-moon]]
 -- vim.opt.background = "light"
 -- vim.api.nvim_set_hl(50, "Normal", { bg = "none" })   -- transparent bg (optional)
