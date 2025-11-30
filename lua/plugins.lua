@@ -26,7 +26,7 @@ require("lazy").setup({
   { "lewis6991/spellsitter.nvim", config = true },
 
   -- 4. Fuzzy finder
-  { "nvim-telescope/telescope.nvim", dependencies = "nvim-lua/plenary.nvim" },
+  -- { "nvim-telescope/telescope.nvim", dependencies = "nvim-lua/plenary.nvim" },
 
   -------------------------------------------------
   -- 5. COMMENT PLUGIN (Ctrl+/ or Cmd+/)
@@ -46,5 +46,22 @@ require("lazy").setup({
       }
     end
   },
+  
   { "akinsho/bufferline.nvim", dependencies = "nvim-tree/nvim-web-devicons", config = true },
+  
+  { "ojroques/nvim-osc52", config = true },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    branch = "0.1.x",          -- important in 2025
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- optional but recommended
+    },
+    config = function()
+      require("telescope").setup{}
+      -- optional: load fzf extension if you want it faster
+      pcall(require("telescope").load_extension, "fzf_native")
+    end,
+  },
 })
