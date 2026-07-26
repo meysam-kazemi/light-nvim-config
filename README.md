@@ -35,7 +35,7 @@ Lazy installs the plugins automatically on first start.
 | Key | Description |
 | :--- | :--- |
 | `Space e` | Toggle left file tree |
-| `cmm` | Toggle comment on the current line or visual selection |
+| `gcc` / `gc` | Toggle comment on the current line / visual selection |
 | `"+y` | Copy to the system clipboard |
 | `"+p` | Paste from the system clipboard |
 | `Space s` | Toggle spell check |
