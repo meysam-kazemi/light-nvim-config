@@ -18,7 +18,7 @@ vim.opt.termguicolors = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
-vim.keymap.set("n", "<C-q>", "<Cmd>bdelete<CR>", { desc = "Close buffer", silent = true })
+vim.keymap.set("n", "<C-q>", "<Cmd>bnext | bdelete #<CR>", { desc = "Close buffer and open next", silent = true })
 
 vim.cmd[[colorscheme tokyonight-moon]]
 -- vim.opt.background = "light"
