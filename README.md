@@ -5,13 +5,14 @@
 
 ## Requirements
 
-- Neovim 0.10 or newer
+- Neovim 0.10 or newer (`nvim --version`)
 - Git and Make
-- `wl-clipboard` on Wayland or `xclip`/`xsel` on X11 for system clipboard access
+- A clipboard provider on Linux: `wl-clipboard` on Wayland or `xclip`/`xsel` on X11
 
 ## Installation
 
-Install Neovim on Linux x86_64 without `sudo`:
+Install Neovim 0.10+ with your system package manager. If your package manager
+has an older version, Linux x86_64 can use the official archive without `sudo`:
 
 ```bash
 mkdir -p ~/.local/bin ~/.local/opt
@@ -30,13 +31,17 @@ nvim
 
 Lazy installs the plugins automatically on first start.
 
+Run `:checkhealth` if clipboard access or a plugin does not work. macOS uses its
+built-in clipboard tools; Linux needs one of the providers listed above.
+
 ## Key Cheatsheet
 
 | Key | Description |
 | :--- | :--- |
 | `Space e` | Toggle left file tree |
-| `cmm` | Toggle comment on the current line or visual selection |
-| `"+y` | Copy to the system clipboard |
+| `gcc` / `gc` | Toggle comment on the current line / visual selection |
+| `y` / `"y` | Copy to the unnamed register and system clipboard |
+| `"+y` | Copy explicitly to the system clipboard |
 | `"+p` | Paste from the system clipboard |
 | `Space s` | Toggle spell check |
 | `gt` / `gT` | Next / previous buffer |
