@@ -17,7 +17,6 @@ vim.opt.expandtab = true
 vim.opt.termguicolors = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-vim.opt.clipboard = "unnamedplus"
 
 vim.keymap.set("n", "<C-q>", "<Cmd>bnext | bdelete #<CR>", { desc = "Close buffer and open next", silent = true })
 

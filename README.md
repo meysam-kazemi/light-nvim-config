@@ -40,7 +40,7 @@ built-in clipboard tools; Linux needs one of the providers listed above.
 | :--- | :--- |
 | `Space e` | Toggle left file tree |
 | `gcc` / `gc` | Toggle comment on the current line / visual selection |
-| `y` / `"y` | Copy to the unnamed register and system clipboard |
+| `y` / `"y` | Copy to the unnamed register |
 | `"+y` | Copy explicitly to the system clipboard |
 | `"+p` | Paste from the system clipboard |
 | `Space s` | Toggle spell check |
